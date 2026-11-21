@@ -4,7 +4,7 @@ jobs:
 
   kubeval:
     docker:
-      - image: eu.gcr.io/swade1987/kubernetes-toolkit:1.17.2
+      - image: ghcr.io/swade1987/kubernetes-toolkit:1.68.0
     steps:
       - checkout
       - run:
@@ -22,7 +22,7 @@ jobs:
 
   deprek8-check:
     docker:
-      - image: eu.gcr.io/swade1987/kubernetes-toolkit:1.17.2
+      - image: ghcr.io/swade1987/kubernetes-toolkit:1.68.0
     steps:
       - checkout
       - run:
