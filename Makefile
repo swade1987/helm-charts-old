@@ -5,7 +5,7 @@ GCLOUD_SERVICE_EMAIL := circle-ci@swade1987.iam.gserviceaccount.com
 GOOGLE_PROJECT_ID := swade1987
 GOOGLE_COMPUTE_ZONE := europe-west2-a
 
-TOOLKIT_IMAGE = ghcr.io/swade1987/kubernetes-toolkit:1.17.2
+TOOLKIT_IMAGE = ghcr.io/swade1987/kubernetes-toolkit:1.68.0
 
 kubeval:
 	docker run --rm --name kubeval-charts -v $(CURRENT_WORKING_DIR)/charts:/charts $(TOOLKIT_IMAGE) bash -c "`cat bin/kubeval-each-chart`"
